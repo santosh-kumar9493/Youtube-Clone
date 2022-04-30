@@ -1,0 +1,84 @@
+.Topbar {
+  height: 85px;
+  display: flex;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 3px 0px 5px #ccc;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  height: 55px;
+  margin: 5px 5px 0px 50px;
+}
+
+.logoText {
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 205%;
+  min-width: 100px;
+  color: rgb(46, 46, 46);
+  box-sizing: border-box;
+  margin: 0;
+}
+.searchBar {
+  position: relative;
+}
+.imgWrapper {
+  width: 20%;
+  max-width: 120px;
+}
+.textWrapper {
+  width: 20%;
+  min-width: 100px;
+  max-width: 150px;
+}
+.searchComp {
+  width: 50%;
+}
+.trendText {
+  width: 10%;
+  text-align: right;
+  z-index: 100;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 900px) {
+  * {
+    box-sizing: border-box;
+  }
+  .logo {
+    height: 43px;
+    margin: 4px;
+  }
+  .logoText {
+    font-size: 23px;
+    margin: 0px;
+  }
+  .trendText {
+    display: none;
+  }
+  .Topbar {
+    width: 100%;
+  }
+  .searchBar {
+    position: relative;
+    height: 100%;
+    overflow: visible;
+    width: 100%;
+    position: relative;
+    left: 35%;
+  }
+  .searchComp {
+    height: 100%;
+    overflow: hidden;
+  }
+  .imgWrapper {
+    text-align: center;
+  }
+}
