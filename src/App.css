@@ -1,0 +1,276 @@
+/* for videoCard */
+
+.Vidcard {
+  width: 75%;
+  border-radius: 4px;
+  box-shadow: 2px 3px 5px #ccc;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 auto;
+  max-height: 200px;
+}
+.videoDescription {
+  max-height: 45px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.imgWrapper {
+  width: 35%;
+  margin: 5px 0px 5px 30px;
+  box-sizing: border-box;
+  flex-shrink: 2;
+  padding: 2px;
+}
+.descWrapper {
+  padding: 3px;
+  width: 65%;
+  flex-shrink: 1;
+}
+
+/* Watchvideo styles */
+.videopage {
+  display: flex;
+  justify-content: start;
+  box-sizing: border-box;
+  padding: 2%;
+}
+.relatedVideoBox {
+  width: 30%;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  max-width: 500px;
+  max-height: 600px;
+}
+
+.videoPlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 70%;
+}
+
+.videoframe {
+  background-color: white;
+  width: 90%;
+  border-radius: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 7px #ccc;
+  text-align: center;
+}
+
+.videoDetails {
+  display: flex;
+  flex-direction: column;
+}
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  align-items: center;
+}
+.statText {
+  margin: 5px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.desBox {
+  width: 100%;
+  max-width: 900px;
+}
+
+.searchBar {
+  position: relative;
+  right: -31%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.inputSearchBox {
+  width: 50%;
+  height: 28px;
+  outline: none;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid rgb(224, 206, 206);
+  background: transparent;
+  font-size: 20px;
+  color: rgb(133, 127, 127);
+}
+
+.sbutton {
+  height: 32px;
+  background: transparent;
+  width: 43px;
+  text-align: center;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid rgb(224, 206, 206);
+  position: relative;
+  top: -3px;
+}
+.vidframeSetter {
+  height: 500px;
+  width: 90%;
+}
+
+/*  Realted video styles */
+
+.relatedVideoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 95px;
+  margin: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.relImgWrapper {
+  width: 200px;
+}
+.reldesWrapper {
+  max-width: 200px;
+  overflow-wrap: break-word;
+  padding: 5px 0px 5px 0px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 4px;
+}
+.relImage {
+  width: 170px;
+}
+
+/* Spinner styles */
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #d9d9d9;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  text-align: center;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .searchBar {
+    height: 100%;
+    overflow: visible;
+    width: 100%;
+    position: relative;
+    left: 30%;
+  }
+  .inputSearchBox {
+    height: 35px;
+    width: 130px;
+    font-size: 15px;
+  }
+  .sbutton {
+    height: 35px;
+    position: relative;
+    top: -1px;
+    text-align: center;
+  }
+  form {
+    position: relative;
+    left: -30%;
+    top: 28%;
+  }
+  .videoContainer {
+    width: 100%;
+    margin: 0;
+  }
+  .Vidcard {
+    width: 100%;
+    flex-direction: column;
+    height: unset;
+    max-height: unset;
+    margin-bottom: 1px;
+  }
+  .imgWrapper {
+    width: 100%;
+    display: block;
+    margin: 0px;
+  }
+  .imgWrapper > img {
+    width: 100%;
+    height: 100%;
+  }
+  .descWrapper {
+    width: 100%;
+    padding: 0% 2%;
+  }
+  .videoDescription {
+    display: none;
+  }
+  .descWrapper > h2 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 0px;
+  }
+  .descWrapper > h5 {
+    font-size: 13px;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+
+  .videopage {
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
+  .videoPlay {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .vidframeSetter {
+    width: 100%;
+    height: 200px;
+    border: none;
+  }
+  .videoframe {
+    width: 100%;
+    margin: 0;
+  }
+  .videoDetails h3 {
+    font-size: 15px;
+    margin-top: 2px;
+  }
+  .statText {
+    font-size: 10px;
+  }
+}
